@@ -11,8 +11,12 @@ import java.awt.event.WindowEvent;
  * @version: 1.0
  */
 public class FirstFrame {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Frame frame = new TankFrame();
 
+        while (true){
+            Thread.sleep(1000);
+            frame.repaint();
+        }
     }
 }
