@@ -15,7 +15,7 @@ public class FirstFrame {
         Frame frame = new TankFrame();
 
         while (true){
-            Thread.sleep(1000);
+            Thread.sleep(50);
             frame.repaint();
         }
     }
